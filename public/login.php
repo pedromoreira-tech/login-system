@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Login</h1>
+    <div class="container">
+        <h1>Login</h1>
 
-    <form action="login_action.php" method="POST">
-        <label>Email:</label><br>
-        <input type="email" name="email" required><br><br>
+        <form action="login_action.php" method="POST">
+            <label>Email:</label>
+            <input type="email" name="email" required>
 
-        <label>Senha:</label><br>
-        <input type="password" name="senha" required><br><br>
+            <label>Senha:</label>
+            <input type="password" name="senha" required>
 
-        <button type="submit">Entrar</button>
-    </form>
+            <button type="submit">Entrar</button>
+        </form>
 
-    <br>
-    <a href="register.php">Criar conta</a>
+        <a href="register.php">Criar conta</a>
+    </div>
 </body>
 </html>

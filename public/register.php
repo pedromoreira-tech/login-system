@@ -3,24 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Cadastro</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Cadastro</h1>
+    <div class="container">
+        <h1>Cadastro</h1>
 
-    <form action="register_action.php" method="POST">
-        <label>Nome:</label><br>
-        <input type="text" name="nome" required><br><br>
+        <form action="register_action.php" method="POST">
+            <label>Nome:</label>
+            <input type="text" name="nome" required>
 
-        <label>Email:</label><br>
-        <input type="email" name="email" required><br><br>
+            <label>Email:</label>
+            <input type="email" name="email" required>
 
-        <label>Senha:</label><br>
-        <input type="password" name="senha" required><br><br>
+            <label>Senha:</label>
+            <input type="password" name="senha" required>
 
-        <button type="submit">Cadastrar</button>
-    </form>
+            <button type="submit">Cadastrar</button>
+        </form>
 
-    <br>
-    <a href="login.php">Já tenho conta</a>
+        <a href="login.php">Já tenho conta</a>
+    </div>
 </body>
 </html>

@@ -12,13 +12,16 @@ if (!isset($_SESSION["user_id"])) {
 <head>
     <meta charset="UTF-8">
     <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Dashboard</h1>
-    <p>Bem-vindo, <?php echo htmlspecialchars($_SESSION["user_nome"]); ?>!</p>
-    <p>Seu email é: <?php echo htmlspecialchars($_SESSION["user_email"]); ?></p>
+    <div class="container dashboard">
+        <h1>Dashboard</h1>
 
-    <br>
-    <a href="logout.php">Sair</a>
+        <p>Bem-vindo, <?php echo htmlspecialchars($_SESSION["user_nome"]); ?>!</p>
+        <p><?php echo htmlspecialchars($_SESSION["user_email"]); ?></p>
+
+        <a href="logout.php">Sair</a>
+    </div>
 </body>
 </html>
